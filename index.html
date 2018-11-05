@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
+        <script src="vue.js"></script>
+    </head>
+    <body>
+        
+        <!-- <div id="app">
+            {{ message }}
+        </div> -->
+        <!-- <div id="app-2">
+			<span v-if="seen">Now you see me</span>
+		</div> -->
+        <div id="app-3">
+            <!-- <p> {{ message }} </p>
+            <input v-model="message"> -->
+            <!-- <button v-on:click="reverse">Reverse Message</button>
+            <button v-on:click="reverseList">Reverse Grocery List</button> -->
+			<!-- <ol>
+				<todo-item
+					v-for="item in groceryList"
+					v-bind:todo="item"
+					v-bind:key="item.id">
+				</todo-item>
+			</ol> -->
+            <p>Sorted Grocery List</p>
+            <ol>
+                <todo-item
+                    v-for="item in sortedGroceryList"
+                    v-bind:todo="item"
+                    v-bind:key="item.id">
+                    <!-- <input v-model="item"> -->
+                </todo-item>
+            </ol>            
+		</div>		
+        
+        <script src="index.js"></script>
+    </body>
+</html>
